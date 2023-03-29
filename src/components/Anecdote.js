@@ -17,7 +17,7 @@ const AnecdoteList = () => {
   const dispatch = useDispatch()
   const anecdotes = useSelector(({ anecdotes, filter }) => {
     if (filter === 'ALL') {
-      return anecdotes.sort((a, b) => {
+      return [...anecdotes].sort((a, b) => {
         return b.votes - a.votes
       })
       //return anecdotes
