@@ -19,13 +19,6 @@ const Notification = () => {
           </>
         )
       )}
-
-      {/* {notification !== 'You posted new anecdote' && (
-        <>
-          You voted <strong>{notification}</strong>
-        </>
-      )}
-      {notification === 'You posted new anecdote' && { notification }} */}
     </div>
   )
 }
